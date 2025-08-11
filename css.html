@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Demo & Cheat Sheet</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.5;
+    }
+    section {
+      border: 1px solid #ccc;
+      margin: 20px 0;
+      padding: 15px;
+      border-radius: 6px;
+    }
+    code {
+      background: #f0f0f0;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+    .demo-box {
+      padding: 10px;
+      margin-top: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Properties Demo</h1>
+
+  <section>
+    <h2>🎨 Color & Background</h2>
+    <p><code>color</code>, <code>background-color</code></p>
+    <div class="demo-box" style="color: white; background-color: teal;">
+      This text is white on a teal background.
+    </div>
+  </section>
+
+  <section>
+    <h2>🔠 Fonts</h2>
+    <p><code>font-size</code>, <code>font-family</code>, <code>font-weight</code></p>
+    <div class="demo-box" style="font-size: 20px; font-family: 'Courier New', monospace; font-weight: bold;">
+      This is bold Courier font at 20px.
+    </div>
+  </section>
+
+  <section>
+    <h2>📐 Padding & Margin</h2>
+    <p><code>padding</code>, <code>margin</code></p>
+    <div class="demo-box" style="background: #eee; padding: 20px; margin: 20px;">
+      Box with 20px padding and margin
+    </div>
+  </section>
+
+  <section>
+    <h2>📏 Width & Height</h2>
+    <p><code>width</code>, <code>height</code></p>
+    <div class="demo-box" style="width: 200px; height: 100px; background: lightgreen;">
+      200px wide, 100px tall
+    </div>
+  </section>
+
+  <section>
+    <h2>🖼 Border</h2>
+    <p><code>border</code>, <code>border-radius</code></p>
+    <div class="demo-box" style="border: 2px dashed red; border-radius: 10px;">
+      Dashed red border with rounded corners
+    </div>
+  </section>
+
+  <section>
+    <h2>☁️ Box Shadow</h2>
+    <p><code>box-shadow</code></p>
+    <div class="demo-box" style="box-shadow: 4px 4px 10px rgba(0,0,0,0.3); background: white;">
+      Box with subtle shadow
+    </div>
+  </section>
+
+  <section>
+    <h2>🎯 Text Styling</h2>
+    <p><code>text-align</code>, <code>text-decoration</code>, <code>text-transform</code></p>
+    <div class="demo-box" style="text-align: center; text-decoration: underline; text-transform: uppercase;">
+      centered, underlined, uppercase
+    </div>
+  </section>
+
+  <section>
+    <h2>🔲 Display & Visibility</h2>
+    <p><code>display</code>, <code>visibility</code>, <code>opacity</code></p>
+    <div class="demo-box" style="display: inline-block; background: pink;">
+      inline-block box
+    </div>
+    <div class="demo-box" style="visibility: hidden; background: lightgray;">
+      hidden box (invisible but takes space)
+    </div>
+    <div class="demo-box" style="opacity: 0.3; background: blue; color: white;">
+      transparent box
+    </div>
+  </section>
+
+  <section>
+    <h2>🧭 Positioning</h2>
+    <p><code>position</code>, <code>top</code>, <code>left</code>, etc.</p>
+    <div style="position: relative; height: 120px; background: #f9f9f9;">
+      <div style="position: absolute; top: 10px; left: 10px; background: orange; padding: 5px;">
+        I'm absolutely positioned
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🔁 Flexbox (Layout)</h2>
+    <p><code>display: flex</code>, <code>justify-content</code>, <code>align-items</code></p>
+    <div style="display: flex; justify-content: space-between; background: #eee; padding: 10px;">
+      <div style="background: lightblue; padding: 10px;">Item 1</div>
+      <div style="background: lightcoral; padding: 10px;">Item 2</div>
+      <div style="background: lightgreen; padding: 10px;">Item 3</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🌀 Transitions</h2>
+    <p><code>transition</code></p>
+    <div style="width: 100px; height: 100px; background: skyblue; transition: all 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+      Hover me
+    </div>
+  </section>
+
+</body>
+</html>
